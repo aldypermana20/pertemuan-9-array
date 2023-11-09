@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class JavaArray {
+
+    public static void main(String[] args) {
+        int jumlahMahasiswa;
+        int[] umurMahasiswa;
+        Scanner input = new Scanner(System.in);
+        System.out.print("Masukan jumlah mahasiswa: ");
+        jumlahMahasiswa = input.nextInt();
+        umurMahasiswa = new int[jumlahMahasiswa];
+        for (int i = 0; i < jumlahMahasiswa; i++) {
+            System.out.print("Umur mahasiswa ke-" + (i + 1) + ": ");
+            umurMahasiswa[i] = input.nextInt();
+        }
+        System.out.println("===Data Umur Mahasiswa===");
+        for (int i = 0; i < jumlahMahasiswa; i++) {
+            System.out.println("Umur mahasiswa ke-" + (i + 1) + ": " + umurMahasiswa[i]);
+        }
+    }
+}
+
